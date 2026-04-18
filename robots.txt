@@ -1,3 +1,88 @@
+# robots.txt for StackLabHQ — Free AI Tools
+# https://freeaitools2026.github.io/freeaitools/
+# Last updated: 2026-04-18
+
+# ====================================
+# Default: Allow all search engines
+# ====================================
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# ====================================
+# Major Search Engines (explicit allow)
+# ====================================
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ====================================
+# AI Training Bots - allowed for visibility
+# (helps surface on ChatGPT, Perplexity, Claude etc.)
+# ====================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ====================================
+# Block bad / spam bots
+# ====================================
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ====================================
+# Sitemaps
+# ====================================
 Sitemap: https://freeaitools2026.github.io/freeaitools/sitemap.xml
