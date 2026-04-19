@@ -317,8 +317,74 @@ footer{border-top:1px solid var(--border);padding:28px clamp(16px,5vw,80px);disp
   ]
 }
 </script>
+<style id="stk-sidebar-css">
+/* StackLabHQ Sticky Shop Sidebar */
+.stk-sidebar{position:fixed;top:90px;left:12px;width:210px;max-height:calc(100vh - 110px);overflow-y:auto;z-index:50;background:linear-gradient(160deg,rgba(13,17,23,0.92),rgba(20,24,32,0.92));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(0,212,170,0.22);border-radius:14px;padding:12px;box-shadow:0 12px 40px rgba(0,0,0,0.55);font-family:system-ui,-apple-system,sans-serif}
+.stk-sidebar::-webkit-scrollbar{width:4px}.stk-sidebar::-webkit-scrollbar-thumb{background:rgba(0,212,170,0.4);border-radius:4px}
+.stk-sb-head{text-align:center;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.stk-sb-head h4{color:#00d4aa;font-size:10px;font-weight:800;letter-spacing:1.5px;margin:0 0 3px;text-transform:uppercase}
+.stk-sb-head p{color:#9ca3af;font-size:10px;margin:0}
+.stk-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:9px;margin-bottom:8px;transition:transform .2s,border-color .2s}
+.stk-card:hover{transform:translateY(-2px);border-color:rgba(0,212,170,0.4)}
+.stk-card-top{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.stk-card-emoji{font-size:16px}
+.stk-card-title{color:#fff;font-size:11px;font-weight:700;line-height:1.2}
+.stk-card-tag{color:#9ca3af;font-size:9.5px;margin:0 0 7px;line-height:1.3}
+.stk-card-price{display:inline-block;background:rgba(0,212,170,0.15);color:#00d4aa;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-bottom:6px}
+.stk-btns{display:flex;gap:4px}
+.stk-btn{flex:1;display:block;text-align:center;padding:5px 3px;font-size:9.5px;font-weight:600;border-radius:5px;text-decoration:none;transition:opacity .15s;line-height:1.2}
+.stk-btn-g{background:linear-gradient(135deg,#ff90e8,#ff62d7);color:#1a0d1f}
+.stk-btn-e{background:linear-gradient(135deg,#f1641e,#e05a12);color:#fff}
+.stk-btn:hover{opacity:.88}
+.stk-sb-all{display:block;text-align:center;color:#00d4aa;font-size:10px;font-weight:700;text-decoration:none;padding:7px;border:1px dashed rgba(0,212,170,0.4);border-radius:7px;margin-top:4px}
+.stk-sb-all:hover{background:rgba(0,212,170,0.08)}
+@media(max-width:1200px){.stk-sidebar{display:none}}
+</style>
 </head>
 <body>
+<!-- ═══ STACKLABHQ STICKY SHOP SIDEBAR ═══ -->
+<aside class="stk-sidebar" aria-label="Our Digital Products">
+  <div class="stk-sb-head"><h4>🛍️ Our Shop</h4><p>Freelancer AI Kit</p></div>
+  <div class="stk-card">
+    <div class="stk-card-top"><span class="stk-card-emoji">📝</span><div class="stk-card-title">30 AI Prompts for Freelancers</div></div>
+    <div class="stk-card-tag">Proven prompts to land clients</div>
+    <div class="stk-card-price">$17</div>
+    <div class="stk-btns">
+      <a class="stk-btn stk-btn-g" href="https://freelanceaikit.gumroad.com/l/ai-prompts-freelancers" target="_blank" rel="noopener sponsored">Gumroad</a>
+      <a class="stk-btn stk-btn-e" href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener sponsored">Etsy</a>
+    </div>
+  </div>
+  <div class="stk-card">
+    <div class="stk-card-top"><span class="stk-card-emoji">🗂️</span><div class="stk-card-title">Freelancer OS Lite</div></div>
+    <div class="stk-card-tag">Notion template for freelancers</div>
+    <div class="stk-card-price">$27</div>
+    <div class="stk-btns">
+      <a class="stk-btn stk-btn-g" href="https://freelanceaikit.gumroad.com/l/notion-template-freelancers-lite" target="_blank" rel="noopener sponsored">Gumroad</a>
+      <a class="stk-btn stk-btn-e" href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener sponsored">Etsy</a>
+    </div>
+  </div>
+  <div class="stk-card">
+    <div class="stk-card-top"><span class="stk-card-emoji">🚀</span><div class="stk-card-title">Freelancer OS Full Bundle</div></div>
+    <div class="stk-card-tag">Complete business toolkit</div>
+    <div class="stk-card-price">$37</div>
+    <div class="stk-btns">
+      <a class="stk-btn stk-btn-g" href="https://freelanceaikit.gumroad.com/l/freelancer-os-full-bundle" target="_blank" rel="noopener sponsored">Gumroad</a>
+      <a class="stk-btn stk-btn-e" href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener sponsored">Etsy</a>
+    </div>
+  </div>
+  <div class="stk-card">
+    <div class="stk-card-top"><span class="stk-card-emoji">⚡</span><div class="stk-card-title">AI Content Factory</div></div>
+    <div class="stk-card-tag">Scale your content 10x</div>
+    <div class="stk-card-price">$57</div>
+    <div class="stk-btns">
+      <a class="stk-btn stk-btn-g" href="https://freelanceaikit.gumroad.com/l/aicontactfactory" target="_blank" rel="noopener sponsored">Gumroad</a>
+      <a class="stk-btn stk-btn-e" href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener sponsored">Etsy</a>
+    </div>
+  </div>
+  <a class="stk-sb-all" href="https://freelanceaikit.gumroad.com" target="_blank" rel="noopener sponsored">View All on Gumroad →</a>
+  <a class="stk-sb-all" href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener sponsored">View All on Etsy →</a>
+</aside>
+
 
 <!-- ══════ NAV ══════ -->
 <nav>
@@ -782,82 +848,7 @@ footer{border-top:1px solid var(--border);padding:28px clamp(16px,5vw,80px);disp
 
 
 <!-- ══════ SHOP SECTION ══════ -->
-<section id="shop" style="padding:60px 20px;background:linear-gradient(135deg,#0a0a0f 0%,#111827 100%);">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:40px;">
-      <p style="color:#00d4aa;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">💎 PREMIUM TEMPLATES</p>
-      <h2 style="color:#fff;font-size:clamp(28px,5vw,42px);font-weight:800;margin:0 0 16px;">Supercharge Your Freelance Career</h2>
-      <p style="color:#9ca3af;font-size:16px;max-width:600px;margin:0 auto;">Professional AI-powered templates trusted by freelancers worldwide. Instant download. No subscription needed.</p>
-    </div>
 
-    <!-- Ad Banner -->
-    <div style="text-align:center;margin:0 0 40px;">
-      <ins class="adsbygoogle" style="display:block;text-align:center" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9823112402523939" data-ad-slot="auto"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:40px;">
-      <!-- Product 1: 30 AI Prompts -->
-      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="background:linear-gradient(135deg,#00d4aa,#0066ff);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;">📝</div>
-        <div style="background:#ff6b35;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px;letter-spacing:1px;">BEST SELLER</div>
-        <h3 style="color:#fff;font-size:18px;font-weight:700;margin:0 0 10px;line-height:1.3;">30 AI Prompts for Freelancers</h3>
-        <p style="color:#9ca3af;font-size:14px;margin:0 0 16px;line-height:1.6;">Win clients faster. Write proposals, emails & social posts in seconds using ChatGPT or Claude.</p>
-        <div style="color:#00d4aa;font-size:26px;font-weight:800;margin-bottom:16px;">$17</div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://freelanceaikit.gumroad.com/l/ai-prompts-freelancers" target="_blank" rel="noopener" style="flex:1;background:#00d4aa;color:#000;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;min-width:110px;">Buy on Gumroad</a>
-          <a href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener" style="flex:1;background:transparent;color:#f97316;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;border:2px solid #f97316;min-width:110px;">Buy on Etsy</a>
-        </div>
-      </div>
-
-      <!-- Product 2: Freelancer OS Lite -->
-      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="background:linear-gradient(135deg,#8b5cf6,#06b6d4);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;">🚀</div>
-        <div style="background:#8b5cf6;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px;letter-spacing:1px;">POPULAR</div>
-        <h3 style="color:#fff;font-size:18px;font-weight:700;margin:0 0 10px;line-height:1.3;">Freelancer OS Lite</h3>
-        <p style="color:#9ca3af;font-size:14px;margin:0 0 16px;line-height:1.6;">Complete Notion system — Client CRM, Project Tracker & Invoice management. Built for freelancers.</p>
-        <div style="color:#00d4aa;font-size:26px;font-weight:800;margin-bottom:16px;">$27</div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://freelanceaikit.gumroad.com/l/notion-template-freelancers-lite" target="_blank" rel="noopener" style="flex:1;background:#00d4aa;color:#000;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;min-width:110px;">Buy on Gumroad</a>
-          <a href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener" style="flex:1;background:transparent;color:#f97316;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;border:2px solid #f97316;min-width:110px;">Buy on Etsy</a>
-        </div>
-      </div>
-
-      <!-- Product 3: Freelancer OS Full Bundle -->
-      <div style="background:linear-gradient(135deg,rgba(0,212,170,0.08),rgba(0,102,255,0.08));border:1px solid rgba(0,212,170,0.3);border-radius:16px;padding:28px;transition:transform 0.2s,box-shadow 0.2s;position:relative;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#00d4aa,#0066ff);color:#fff;font-size:11px;font-weight:700;padding:4px 16px;border-radius:0 0 10px 10px;letter-spacing:1px;">⭐ BEST VALUE</div>
-        <div style="background:linear-gradient(135deg,#0066ff,#00d4aa);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;margin-top:16px;">💼</div>
-        <h3 style="color:#fff;font-size:18px;font-weight:700;margin:0 0 10px;line-height:1.3;">Freelancer OS Full Bundle</h3>
-        <p style="color:#9ca3af;font-size:14px;margin:0 0 16px;line-height:1.6;">Full Notion OS + 30 AI Prompts + Pro scripts. Everything you need to run your freelance business.</p>
-        <div style="color:#00d4aa;font-size:26px;font-weight:800;margin-bottom:16px;">$37</div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://freelanceaikit.gumroad.com/l/freelancer-os-full-bundle" target="_blank" rel="noopener" style="flex:1;background:linear-gradient(90deg,#00d4aa,#0066ff);color:#fff;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;min-width:110px;">Buy on Gumroad</a>
-          <a href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener" style="flex:1;background:transparent;color:#f97316;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;border:2px solid #f97316;min-width:110px;">Buy on Etsy</a>
-        </div>
-      </div>
-
-      <!-- Product 4: AI Content Factory -->
-      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,212,170,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-        <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px;">🎥</div>
-        <div style="background:#f59e0b;color:#000;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:inline-block;margin-bottom:12px;letter-spacing:1px;">VIDEO BUNDLE</div>
-        <h3 style="color:#fff;font-size:18px;font-weight:700;margin:0 0 10px;line-height:1.3;">AI Content Factory</h3>
-        <p style="color:#9ca3af;font-size:14px;margin:0 0 16px;line-height:1.6;">Full video tutorial + complete Notion OS walkthrough + 30 business scripts. Build your AI business fast.</p>
-        <div style="color:#00d4aa;font-size:26px;font-weight:800;margin-bottom:16px;">$57</div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://freelanceaikit.gumroad.com/l/aicontactfactory" target="_blank" rel="noopener" style="flex:1;background:#00d4aa;color:#000;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;min-width:110px;">Buy on Gumroad</a>
-          <a href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener" style="flex:1;background:transparent;color:#f97316;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;text-align:center;border:2px solid #f97316;min-width:110px;">Buy on Etsy</a>
-        </div>
-      </div>
-    </div>
-
-    <div style="text-align:center;padding:24px;background:rgba(0,212,170,0.05);border:1px solid rgba(0,212,170,0.2);border-radius:12px;">
-      <p style="color:#9ca3af;font-size:14px;margin:0 0 12px;">Built using AI prompts — the same power available in our tools above. 🤖</p>
-      <a href="https://www.etsy.com/shop/FreelanceAIKit" target="_blank" rel="noopener" style="color:#00d4aa;font-weight:700;text-decoration:none;font-size:14px;">View All Products on Etsy →</a>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="https://freelanceaikit.gumroad.com" target="_blank" rel="noopener" style="color:#00d4aa;font-weight:700;text-decoration:none;font-size:14px;">View All Products on Gumroad →</a>
-    </div>
-  </div>
-</section>
 
 <!-- ══════ FOOTER ══════ -->
 <footer>
@@ -1922,6 +1913,22 @@ document.querySelectorAll(".tool-card,.step,.pop-card").forEach(el => {
   const d=new Date(),str=d.toISOString().split("T")[0];
   const inv=document.getElementById("inv-date");if(inv)inv.value=str;
   const ageOn=document.getElementById("age-on");if(ageOn)ageOn.value=str;
+})();
+</script>
+
+<script>
+// Auto-open tool from URL ?tool=xxx or #xxx
+(function(){
+  function tryOpen(){
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('tool') || (window.location.hash ? window.location.hash.substring(1) : '');
+    if (id && typeof openTool === 'function') {
+      setTimeout(function(){ try { openTool(id); } catch(e){ console.warn('openTool failed for', id, e); } }, 400);
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryOpen);
+  } else { tryOpen(); }
 })();
 </script>
 </body>
