@@ -72,7 +72,7 @@
     .page-wrap{position:relative;z-index:1;display:flex;gap:24px;max-width:1400px;margin:0 auto;padding:24px clamp(12px,3vw,24px)}
     
     /* LEFT STICKY SIDEBAR - Etsy/Gumroad products */
-    .shop-sidebar{width:240px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto;scrollbar-width:thin}
+    .shop-sidebar{width:240px;flex-shrink:0;position:sticky;top:80px;align-self:flex-start;max-height:none;overflow-y:visible;scrollbar-width:thin}
     .shop-sidebar::-webkit-scrollbar{width:4px}
     .shop-sidebar::-webkit-scrollbar-thumb{background:var(--border2);border-radius:4px}
     .shop-sidebar h3{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;text-align:center}
@@ -164,7 +164,7 @@
 <style id="stklab-home-sync">
 
 /* StackLabHQ Sticky Shop Sidebar */
-.stk-sidebar{position:fixed;top:82px;left:10px;width:220px;max-height:calc(100vh - 100px);overflow-y:auto;z-index:50;background:linear-gradient(160deg,rgba(13,17,23,0.95),rgba(20,24,32,0.95));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(0,212,170,0.25);border-radius:14px;padding:12px;box-shadow:0 12px 40px rgba(0,0,0,0.55);font-family:'Outfit',system-ui,sans-serif}
+.stk-sidebar{position:fixed;top:82px;left:10px;width:220px;max-height:none;overflow-y:visible;z-index:50;background:linear-gradient(160deg,rgba(13,17,23,0.95),rgba(20,24,32,0.95));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(0,212,170,0.25);border-radius:14px;padding:12px;box-shadow:0 12px 40px rgba(0,0,0,0.55);font-family:'Outfit',system-ui,sans-serif}
 .stk-sidebar::-webkit-scrollbar{width:4px}.stk-sidebar::-webkit-scrollbar-thumb{background:rgba(0,212,170,0.4);border-radius:4px}
 .stk-sb-head{text-align:center;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.08)}
 .stk-sb-head h4{color:#00d4aa;font-size:10px;font-weight:800;letter-spacing:1.5px;margin:0 0 3px;text-transform:uppercase}
